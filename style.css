@@ -1,0 +1,238 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+}
+
+/* Container */
+.container {
+    text-align: center;
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+}
+
+/* Title */
+.title {
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Difficulty Selector */
+.difficulty-selector {
+    margin-bottom: 30px;
+}
+
+.difficulty-selector label {
+    color: white;
+    font-size: 1.2rem;
+    margin-right: 10px;
+    font-weight: 600;
+}
+
+.difficulty-selector select {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    background: white;
+    color: #333;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.difficulty-selector select:hover {
+    transform: scale(1.05);
+}
+
+/* Game Box */
+.game-box {
+    width: 100%;
+    height: 400px;
+    background: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    user-select: none;
+}
+
+.game-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+#gameText {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Game States */
+.game-box.waiting {
+    background: #ef4444;
+    cursor: wait;
+}
+
+.game-box.waiting #gameText {
+    color: white;
+}
+
+.game-box.ready {
+    background: #22c55e;
+    cursor: pointer;
+}
+
+.game-box.ready #gameText {
+    color: white;
+}
+
+.game-box.too-soon {
+    background: #f59e0b;
+}
+
+.game-box.too-soon #gameText {
+    color: white;
+}
+
+/* Shake Animation */
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+    20%, 40%, 60%, 80% { transform: translateX(10px); }
+}
+
+.shake {
+    animation: shake 0.5s;
+}
+
+/* Stats Section */
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.stat-item {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    flex: 1;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.stat-label {
+    display: block;
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.stat-value {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #667eea;
+}
+
+/* Instructions */
+.instructions {
+    margin-top: 40px;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.instructions h3 {
+    color: #667eea;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.instructions ol {
+    text-align: left;
+    max-width: 400px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+.instructions li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .title {
+        font-size: 2rem;
+    }
+
+    .game-box {
+        height: 300px;
+    }
+
+    #gameText {
+        font-size: 1.8rem;
+        padding: 0 20px;
+    }
+
+    .stats {
+        flex-direction: column;
+    }
+
+    .stat-item {
+        margin-bottom: 10px;
+    }
+
+    .instructions ol {
+        padding-left: 20px;
+    }
+
+    .instructions li {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    .difficulty-selector label {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .game-box {
+        height: 250px;
+    }
+
+    #gameText {
+        font-size: 1.5rem;
+    }
+
+    .stat-value {
+        font-size: 1.5rem;
+    }
+}

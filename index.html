@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reflex Arena - Test Your Reaction Time</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Reflex Arena</h1>
+        
+        <!-- Difficulty Selector -->
+        <div class="difficulty-selector">
+            <label for="difficulty">Difficulty:</label>
+            <select id="difficulty">
+                <option value="easy">Easy (1-5s)</option>
+                <option value="medium" selected>Medium (1-3s)</option>
+                <option value="hard">Hard (0.5-2s)</option>
+            </select>
+        </div>
+
+        <!-- Main Game Box -->
+        <div id="gameBox" class="game-box">
+            <p id="gameText">Click Start</p>
+        </div>
+
+        <!-- Stats Display -->
+        <div class="stats">
+            <div class="stat-item">
+                <span class="stat-label">Current Time:</span>
+                <span id="currentTime" class="stat-value">-</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">Best Time:</span>
+                <span id="bestTime" class="stat-value">-</span>
+            </div>
+        </div>
+
+        <!-- Instructions -->
+        <div class="instructions">
+            <h3>How to Play</h3>
+            <ol>
+                <li>Click the box to start</li>
+                <li>Wait for the box to turn GREEN</li>
+                <li>Click as fast as you can when it turns green</li>
+                <li>Try to beat your best time!</li>
+            </ol>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
